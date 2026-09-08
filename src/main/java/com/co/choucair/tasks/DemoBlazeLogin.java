@@ -55,6 +55,13 @@ public class DemoBlazeLogin implements Task {
                         .forNoMoreThan(10)
                         .seconds()
         );
+// Pausa temporal para visualizar la ejecucion
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     /**
