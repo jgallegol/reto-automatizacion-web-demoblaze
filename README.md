@@ -1,3 +1,81 @@
+# Automatizacion Web DemoBlaze
+
+## Descripcion
+
+Proyecto de automatizacion web desarrollado utilizando:
+
+- Serenity BDD
+- Screenplay Pattern
+- Cucumber
+- Gradle
+- Selenium
+
+## Flujos automatizados
+
+### Login exitoso
+
+Valida el acceso correcto de un usuario en DemoBlaze.
+
+### Compra exitosa de producto
+
+Valida el flujo completo de compra:
+
+- Seleccion de producto
+- Agregar al carrito
+- Place Order
+- Purchase
+- Confirmacion de compra exitosa
+
+## Ejecucion
+
+Ejecutar todas las pruebas:
+
+```bash
+
+.\gradlew.bat clean test
+
+```
+## Aplicacion bajo prueba
+
+URL: https://www.demoblaze.com
+
+## Escenarios automatizados
+
+### Login exitoso
+
+- Abrir DemoBlaze
+- Iniciar sesion
+- Validar mensaje Welcome Admin
+
+### Compra exitosa
+
+- Seleccionar producto
+- Agregar al carrito
+- Completar formulario de compra
+- Confirmar compra
+- Validar mensaje de compra exitosa
+
+## Evidencias
+
+Los resultados de ejecucion pueden consultarse en:
+
+target/index.html
+
+El reporte Serenity incluye:
+
+- Resultado de ejecucion
+- Capturas de pantalla
+- Trazabilidad de pasos
+- Duracion de escenarios
+
+## Versiones utilizadas
+
+- Java 21
+- Gradle 8.5
+- Serenity BDD 4.x
+- Cucumber 7.x
+- Selenium WebDriver 4.x
+
 # 🚀 Arquetipo Base de Automatización Web - Serenity BDD
 
 ## 📋 Descripción
