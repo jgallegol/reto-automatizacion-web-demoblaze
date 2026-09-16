@@ -15,9 +15,9 @@ steps:
     gradleWrapperFile: 'gradlew'  # Path to your Gradle wrapper /# Ruta del archivo gradlew utilizado para ejecutar Gradle.
     #tasks: 'build'  # Replace with the tasks you want to run /# Tareas de Gradle que se ejecutaran durante el pipeline.
     tasks: 'clean test' # Ejecuta una compilacion limpia y corre las pruebas automatizadas.
-    options: '-Xmx3072m' 
+    ##options: '-Xmx3072m' / fallo en la ejecucion, debe pasarse a la JVM de otra forma y no directamente en options.
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'  # Updated pattern for test result files
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'  # Replace with your JDK version /# Version de Java utilizada para ejecutar el proyecto.
+    jdkVersionOption: '1.21'  # Replace with your JDK version /# Version de Java utilizada para ejecutar el proyecto.
     jdkArchitectureOption: 'x64'
