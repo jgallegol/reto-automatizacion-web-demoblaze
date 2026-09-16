@@ -21,3 +21,8 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.21'  # Replace with your JDK version /# Version de Java utilizada para ejecutar el proyecto.
     jdkArchitectureOption: 'x64'
+
+- task: PublishPipelineArtifact@1 # Tarea para publicar reportes serenity como artefacto
+  inputs:
+    targetPath: 'target'
+    artifact: 'SerenityReport'
