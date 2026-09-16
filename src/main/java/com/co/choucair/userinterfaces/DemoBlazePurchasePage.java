@@ -68,7 +68,7 @@ public class DemoBlazePurchasePage {
     // Mensaje compra exitosa
     public static final Target LBL_PURCHASE_SUCCESS =
             Target.the("Mensaje compra exitosa")
-                    .located(By.xpath("//div[contains(@class,'sweet-alert')]//h2"));
+                    .located(By.xpath("//h2[contains(text(),'Thank you for your purchase!')]"));
 
     // Boton OK del mensaje de confirmacion
     public static final Target BTN_OK_PURCHASE =
